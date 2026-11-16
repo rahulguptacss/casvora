@@ -1,0 +1,519 @@
+{
+  "common": {
+    "Header": {
+      "top_bar": {
+        "address": "123 Education Lane, New York, NY 10001",
+        "phone": "+100000000000",
+        "phone_href": "tel:+100000000000",
+        "email": "info@xyz.com",
+        "email_href": "mailto:info@xyz.com",
+        "socials": [
+          {
+            "name": "Facebook",
+            "href": "https://facebook.com",
+            "icon": "Facebook"
+          },
+          {
+            "name": "Instagram",
+            "href": "https://instagram.com",
+            "icon": "Instagram"
+          },
+          {
+            "name": "LinkedIn",
+            "href": "https://linkedin.com",
+            "icon": "Linkedin"
+          },
+          {
+            "name": "YouTube",
+            "href": "https://youtube.com",
+            "icon": "Youtube"
+          }
+        ]
+      },
+      "logo": "/logo/logo.webp",
+      "logo_text": "CASVORA",
+      "logo_subtext": "REAL ESTATE • ARCHITECTURE",
+      "links": [
+        {
+          "name": "Home",
+          "href": "#home"
+        },
+        {
+          "name": "About Us",
+          "href": "#about"
+        },
+        {
+          "name": "Properties",
+          "href": "#properties"
+        },
+        {
+          "name": "Services",
+          "href": "#services"
+        },
+        {
+          "name": "Gallery",
+          "href": "#gallery"
+        },
+        {
+          "name": "Testimonials",
+          "href": "#testimonials"
+        },
+        {
+          "name": "FAQ",
+          "href": "#faq"
+        },
+        {
+          "name": "Contact Us",
+          "href": "#contact"
+        }
+      ],
+      "cta_button": {
+        "text": "Enquire Now",
+        "href": "#contact"
+      },
+      "menu_aria_label": "Open navigation menu",
+      "close_aria_label": "Close navigation menu"
+    },
+    "Footer": {
+      "logo": "/logo/logo.webp",
+      "logo_text": "CASVORA",
+      "logo_subtext": "REAL ESTATE",
+      "tagline": "Your Trusted Partner in\nReal Estate Solutions.",
+      "quick_links_title": "Quick Links",
+      "quick_links": [
+        {
+          "name": "Home",
+          "href": "#home"
+        },
+        {
+          "name": "About Us",
+          "href": "#about"
+        },
+        {
+          "name": "Properties",
+          "href": "#properties"
+        },
+        {
+          "name": "Services",
+          "href": "#services"
+        },
+        {
+          "name": "Gallery",
+          "href": "#gallery"
+        },
+        {
+          "name": "Contact Us",
+          "href": "#contact"
+        }
+      ],
+      "contact_title": "Get in Touch",
+      "address": "123 Education Lane,\nNew York, NY 10001",
+      "phone": "+100000000000",
+      "phone_href": "tel:+100000000000",
+      "email": "info@xyz.com",
+      "email_href": "mailto:info@xyz.com",
+      "copyright": "Copyright © 2026. All rights reserved. Powered by Lestow",
+      "socials": [
+        {
+          "name": "Facebook",
+          "href": "https://facebook.com",
+          "icon": "Facebook"
+        },
+        {
+          "name": "Instagram",
+          "href": "https://instagram.com",
+          "icon": "Instagram"
+        },
+        {
+          "name": "LinkedIn",
+          "href": "https://linkedin.com",
+          "icon": "Linkedin"
+        },
+        {
+          "name": "YouTube",
+          "href": "https://youtube.com",
+          "icon": "Youtube"
+        }
+      ]
+    },
+    "BackToTop": {
+      "aria_label": "Scroll back to top"
+    }
+  },
+  "categories": {
+    "RealEstateArchitecture": {
+      "templateComponents": {
+        "template-1": {
+          "pages": {
+            "home": {
+              "title": "CASVORA | Premier Real Estate & Architecture",
+              "pageName": "home",
+              "metadata": {
+                "title": "CASVORA | Find Your Dream Home with CASVORA",
+                "description": "Discover exclusive luxury villas, premium apartments, and prime commercial spaces with CASVORA real estate and architectural advisory."
+              },
+              "components": [
+                {
+                  "key": "Hero",
+                  "component": "Hero"
+                },
+                {
+                  "key": "About",
+                  "component": "About"
+                },
+                {
+                  "key": "Properties",
+                  "component": "Properties"
+                },
+                {
+                  "key": "Services",
+                  "component": "Services"
+                },
+                {
+                  "key": "Gallery",
+                  "component": "Gallery"
+                },
+                {
+                  "key": "Testimonials",
+                  "component": "Testimonials"
+                },
+                {
+                  "key": "Faq",
+                  "component": "Faq"
+                },
+                {
+                  "key": "Contact",
+                  "component": "Contact"
+                }
+              ]
+            }
+          },
+          "sections": {
+            "hero": {
+              "eyebrow": "PREMIUM RESIDENCES",
+              "headline_prefix": "Find Your Dream Home",
+              "headline_highlight": "with CASVORA",
+              "description": "Exclusive homes, prime locations and exceptional living spaces for a better tomorrow.",
+              "button_text": "Explore Properties",
+              "button_link": "#properties",
+              "image": "/images/hero/hero-villa.webp",
+              "image_alt": "CASVORA Premium Residences and Luxury Villa at Twilight"
+            },
+            "about": {
+              "eyebrow": "ABOUT CASVORA",
+              "heading_prefix": "Building Spaces for",
+              "heading_highlight": "Better Living",
+              "description": "CASVORA is a trusted real estate company dedicated to connecting people with exceptional properties. We specialize in premium residential and commercial spaces, offering expert guidance and a seamless property experience from search to possesion.",
+              "badge_text": "EST. 2010 | REAL ESTATE EXPERTS",
+              "image": "/images/about/about-villa.webp",
+              "image_alt": "CASVORA Building Spaces for Better Living Modern Villa",
+              "features": [
+                {
+                  "id": "feat-1",
+                  "title": "Trusted Expertise",
+                  "icon": "Home"
+                },
+                {
+                  "id": "feat-2",
+                  "title": "Quality Properties",
+                  "icon": "Award"
+                },
+                {
+                  "id": "feat-3",
+                  "title": "Client Focused",
+                  "icon": "Users"
+                }
+              ]
+            },
+            "properties": {
+              "eyebrow": "OUR PROPERTIES",
+              "heading_prefix": "Explore Our",
+              "heading_highlight": "Top Properties",
+              "subtitle": "Handpicked residences and commercial spaces designed for modern lifestyles and great returns.",
+              "items": [
+                {
+                  "id": "prop-1",
+                  "title": "Luxury Villa",
+                  "badge": "For Sale",
+                  "badge_variant": "sale",
+                  "location": "Golf Avenue, New Delhi",
+                  "price": "₹2.85 Cr",
+                  "specs": [
+                    {
+                      "icon": "Bed",
+                      "label": "4 Beds"
+                    },
+                    {
+                      "icon": "Bath",
+                      "label": "4 Baths"
+                    },
+                    {
+                      "icon": "Maximize2",
+                      "label": "3,500 Sq.Ft."
+                    }
+                  ],
+                  "image": "/images/properties/luxury-villa.webp",
+                  "image_alt": "CASVORA Luxury Villa with Garden and Balcony"
+                },
+                {
+                  "id": "prop-2",
+                  "title": "Premium Apartment",
+                  "badge": "For Sale",
+                  "badge_variant": "sale",
+                  "location": "Sector 62, Gurugram",
+                  "price": "₹1.20 Cr",
+                  "specs": [
+                    {
+                      "icon": "Bed",
+                      "label": "3 Beds"
+                    },
+                    {
+                      "icon": "Bath",
+                      "label": "3 Baths"
+                    },
+                    {
+                      "icon": "Maximize2",
+                      "label": "1,850 Sq.Ft."
+                    }
+                  ],
+                  "image": "/images/properties/premium-apartment.webp",
+                  "image_alt": "CASVORA Premium High-Rise Modern Apartment"
+                },
+                {
+                  "id": "prop-3",
+                  "title": "Commercial Space",
+                  "badge": "For Rent",
+                  "badge_variant": "rent",
+                  "location": "Business Park, Noida",
+                  "price": "₹75,000 /mo",
+                  "specs": [
+                    {
+                      "icon": "Maximize2",
+                      "label": "2,200 Sq.Ft."
+                    },
+                    {
+                      "icon": "Building2",
+                      "label": "2nd Floor"
+                    },
+                    {
+                      "icon": "ArrowUpDown",
+                      "label": "With Lift"
+                    }
+                  ],
+                  "image": "/images/properties/commercial-space.webp",
+                  "image_alt": "CASVORA Contemporary Commercial Office Glass Complex"
+                }
+              ]
+            },
+            "services": {
+              "eyebrow": "OUR SERVICES",
+              "heading_prefix": "Comprehensive",
+              "heading_highlight": "Real Estate Solutions",
+              "subtitle": "From buying and selling to leasing and investment, we provide end-to-end real estate services tailored to your needs.",
+              "items": [
+                {
+                  "id": "srv-1",
+                  "title": "Buy Property",
+                  "description": "Find the perfect property that fits your lifestyle and investment goals.",
+                  "icon": "Home",
+                  "image": "/images/services/buy-property.webp",
+                  "image_alt": "Modern luxury residential villa exterior"
+                },
+                {
+                  "id": "srv-2",
+                  "title": "Sell Property",
+                  "description": "Get the best value for your property with expert marketing and trusted guidance.",
+                  "icon": "Handshake",
+                  "image": "/images/services/sell-property.webp",
+                  "image_alt": "Handover keys for selling property"
+                },
+                {
+                  "id": "srv-3",
+                  "title": "Rent Property",
+                  "description": "Explore a wide range of rental options for homes and commercial spaces.",
+                  "icon": "Key",
+                  "image": "/images/services/rent-property.webp",
+                  "image_alt": "Spacious luxury apartment living room for rent"
+                },
+                {
+                  "id": "srv-4",
+                  "title": "Property Consultation",
+                  "description": "Receive professional advice to make informed and profitable real estate decisions.",
+                  "icon": "TrendingUp",
+                  "image": "/images/services/consultation.webp",
+                  "image_alt": "Architectural villa model for property consultation"
+                }
+              ]
+            },
+            "gallery": {
+              "eyebrow": "PROPERTY GALLERY",
+              "heading_prefix": "A Glimpse of Our",
+              "heading_highlight": "Premium Properties",
+              "subtitle": "Take a visual tour through our exclusive collection of luxury residential, commercial, and interior architecture.",
+              "images": [
+                {
+                  "id": "gal-1",
+                  "src": "/images/gallery/gallery-1.webp",
+                  "alt": "Contemporary Luxury Villa",
+                  "category": "Villa"
+                },
+                {
+                  "id": "gal-2",
+                  "src": "/images/gallery/gallery-2.webp",
+                  "alt": "High-Rise Residential Living",
+                  "category": "Apartment"
+                },
+                {
+                  "id": "gal-3",
+                  "src": "/images/gallery/gallery-3.webp",
+                  "alt": "Spacious Living Room Architecture",
+                  "category": "Interior"
+                },
+                {
+                  "id": "gal-4",
+                  "src": "/images/gallery/gallery-4.webp",
+                  "alt": "Modern Gourmet Kitchen Interior",
+                  "category": "Interior"
+                },
+                {
+                  "id": "gal-5",
+                  "src": "/images/gallery/gallery-5.webp",
+                  "alt": "Glass Commercial Tower",
+                  "category": "Commercial"
+                },
+                {
+                  "id": "gal-6",
+                  "src": "/images/gallery/gallery-6.webp",
+                  "alt": "Contemporary Residence Entrance",
+                  "category": "Architecture"
+                }
+              ]
+            },
+            "testimonials": {
+              "eyebrow": "TESTIMONIALS",
+              "heading_prefix": "What Our",
+              "heading_highlight": "Clients Say",
+              "subtitle": "Real experiences from homebuyers, investors, and property owners.",
+              "watermark_image": "",
+              "items": [
+                {
+                  "id": "test-1",
+                  "quote": "They helped us find a home that perfectly fits our family's needs. The entire process was seamless and professional.",
+                  "author_name": "Arjun Mehta",
+                  "role": "Homebuyer, Greenview Residences",
+                  "avatar": "/images/testimonials/arjun-mehta.webp",
+                  "avatar_alt": "Portrait of Arjun Mehta",
+                  "rating": 5
+                },
+                {
+                  "id": "test-2",
+                  "quote": "CASVORA's advisory team provided exceptional market intelligence for our commercial portfolio. Transparent, responsive, and reliable throughout.",
+                  "author_name": "Priya Sharma",
+                  "role": "Investor, Corporate Commercial Space",
+                  "avatar": "/images/testimonials/arjun-mehta.webp",
+                  "avatar_alt": "Portrait of Priya Sharma",
+                  "rating": 5
+                },
+                {
+                  "id": "test-3",
+                  "quote": "From our initial site visit to the final registration, CASVORA delivered an unparalleled level of attention to detail and luxury service.",
+                  "author_name": "Rohit Verma",
+                  "role": "Homeowner, Luxury Penthouse",
+                  "avatar": "/images/testimonials/arjun-mehta.webp",
+                  "avatar_alt": "Portrait of Rohit Verma",
+                  "rating": 5
+                }
+              ]
+            },
+            "faq": {
+              "eyebrow": "F A Q",
+              "heading_prefix": "Frequently Asked",
+              "heading_highlight": "Questions",
+              "subtitle": "Find quick answers to the most common queries about buying, selling, and investing in properties.",
+              "items": [
+                {
+                  "id": "faq-1",
+                  "question": "How do I buy a property with you?",
+                  "answer": "Our process is simple and transparent. We help you shortlist the right properties, arrange site visits, assist with documentation, and guide you until the final purchase."
+                },
+                {
+                  "id": "faq-2",
+                  "question": "Do you also help in selling properties?",
+                  "answer": "Yes, we connect sellers with verified high-intent buyers, manage strategic marketing, and ensure transparent, hassle-free property sales documentation."
+                },
+                {
+                  "id": "faq-3",
+                  "question": "Can I get assistance with property investment?",
+                  "answer": "Absolutely. Our investment advisors provide detailed yield analysis, capital appreciation projections, and tailored portfolios for both residential and commercial investments."
+                },
+                {
+                  "id": "faq-4",
+                  "question": "Are the properties legally verified?",
+                  "answer": "Every property listed under CASVORA undergoes rigorous due diligence, legal title clearance, municipal compliance checks, and structural verifications."
+                },
+                {
+                  "id": "faq-5",
+                  "question": "Do you provide post-purchase support?",
+                  "answer": "Yes, we provide complete post-purchase support, including tenant placement, ongoing property management, and bespoke interior architectural advisory."
+                }
+              ]
+            },
+            "contact": {
+              "eyebrow": "CONTACT & ENQUIRY",
+              "heading_prefix": "Get in Touch or",
+              "heading_highlight": "Enquire Now",
+              "description": "Have a question, need more details, or want to schedule a property visit? Reach out to us or send an enquiry — we’re here to help.",
+              "contact_cards": [
+                {
+                  "id": "cc-phone",
+                  "icon": "Phone",
+                  "title": "CALL US",
+                  "line1": "+100000000000",
+                  "href": "tel:+100000000000"
+                },
+                {
+                  "id": "cc-email",
+                  "icon": "Mail",
+                  "title": "EMAIL US",
+                  "line1": "info@xyz.com",
+                  "href": "mailto:info@xyz.com"
+                },
+                {
+                  "id": "cc-address",
+                  "icon": "MapPin",
+                  "title": "VISIT US",
+                  "line1": "123 Education Lane, New York, NY 10001",
+                  "href": "https://maps.google.com/?q=123+Education+Lane,+New+York,+NY+10001"
+                }
+              ],
+              "form": {
+                "card_title": "Send an Enquiry",
+                "card_subtitle": "Share your details and our team will get back to you shortly.",
+                "name_label": "Your Name",
+                "name_placeholder": "Your Name *",
+                "email_label": "Email Address",
+                "email_placeholder": "Email Address *",
+                "phone_label": "Phone Number",
+                "phone_placeholder": "Phone Number *",
+                "property_label": "Interested In",
+                "property_placeholder": "Interested In *",
+                "property_options": [
+                  "Luxury Villa",
+                  "Premium Apartment",
+                  "Commercial Space",
+                  "Residential Penthouse",
+                  "Strategic Land / Plot"
+                ],
+                "message_label": "Your Message",
+                "message_placeholder": "Your Message",
+                "submit_text": "Send Enquiry",
+                "submitting_text": "Sending...",
+                "success_message": "Thank you! Your enquiry has been received. Our property specialist will contact you shortly."
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
