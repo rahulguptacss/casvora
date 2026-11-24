@@ -28,8 +28,8 @@ export default function Footer({ data }: { data: FooterData }) {
           transition={{ duration: 0.6, ease: 'easeOut' }}
           className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-0 items-start"
         >
-          {/* Column 1: Brand Logo & Centered Tagline */}
-          <div className="flex flex-col items-center text-center px-4 sm:px-6 lg:pr-12 lg:border-r lg:border-[#CBD5E1]">
+          {/* Column 1: Brand Logo & Description (Left-aligned) */}
+          <div className="flex flex-col items-start text-left px-4 sm:px-6 lg:pr-12 lg:border-r lg:border-[#CBD5E1]">
             <Link href="#home" className="inline-block group focus:outline-none">
               <Image
                 src={data.logo || '/logo/logo.webp'}
@@ -41,8 +41,8 @@ export default function Footer({ data }: { data: FooterData }) {
               />
             </Link>
 
-            <p className="text-xs sm:text-[13.5px] font-medium text-[#0A2540] leading-relaxed max-w-[260px] mt-2.5 whitespace-pre-line text-center">
-              {data.tagline}
+            <p className="text-xs sm:text-[13.5px] font-medium text-[#0A2540] leading-relaxed max-w-[280px] mt-3 whitespace-pre-line text-left">
+              {data.tagline || data.description}
             </p>
           </div>
 

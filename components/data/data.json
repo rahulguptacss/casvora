@@ -317,7 +317,8 @@
                   "description": "Find the perfect property that fits your lifestyle and investment goals.",
                   "icon": "Home",
                   "image": "/images/services/buy-property.webp",
-                  "image_alt": "Modern luxury residential villa exterior"
+                  "image_alt": "Modern luxury residential villa exterior",
+                  "link": "#contact"
                 },
                 {
                   "id": "srv-2",
@@ -325,7 +326,8 @@
                   "description": "Get the best value for your property with expert marketing and trusted guidance.",
                   "icon": "Handshake",
                   "image": "/images/services/sell-property.webp",
-                  "image_alt": "Handover keys for selling property"
+                  "image_alt": "Handover keys for selling property",
+                  "link": "#contact"
                 },
                 {
                   "id": "srv-3",
@@ -333,7 +335,8 @@
                   "description": "Explore a wide range of rental options for homes and commercial spaces.",
                   "icon": "Key",
                   "image": "/images/services/rent-property.webp",
-                  "image_alt": "Spacious luxury apartment living room for rent"
+                  "image_alt": "Spacious luxury apartment living room for rent",
+                  "link": "#contact"
                 },
                 {
                   "id": "srv-4",
@@ -341,7 +344,8 @@
                   "description": "Receive professional advice to make informed and profitable real estate decisions.",
                   "icon": "TrendingUp",
                   "image": "/images/services/consultation.webp",
-                  "image_alt": "Architectural villa model for property consultation"
+                  "image_alt": "Architectural villa model for property consultation",
+                  "link": "#contact"
                 }
               ]
             },

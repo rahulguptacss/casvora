@@ -2,6 +2,7 @@
 
 import React from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 import { motion } from 'framer-motion';
 import { Home, Handshake, Key, TrendingUp, BarChart3, type LucideIcon } from 'lucide-react';
 import SectionHeading from '../../ui/SectionHeading';
@@ -39,6 +40,25 @@ const serviceIconMap: Record<string, LucideIcon | React.ComponentType<{ classNam
 export default function Services({ data }: { data: ServicesSectionData }) {
   if (!data) return null;
 
+  const handleCardClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string = '#contact') => {
+    e.preventDefault();
+    const targetId = href.replace('#', '') || 'contact';
+    const element = document.getElementById(targetId);
+
+    if (element) {
+      const headerOffset = 85;
+      const elementPosition = element.getBoundingClientRect().top;
+      const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: 'smooth',
+      });
+    } else {
+      window.location.hash = href;
+    }
+  };
+
   return (
     <section id="services" className="pt-6 sm:pt-8 lg:pt-10 pb-6 sm:pb-8 lg:pb-10 bg-white overflow-hidden">
       <div className="max-w-7xl mx-auto px-5 sm:px-8 lg:px-12">
@@ -63,36 +83,42 @@ export default function Services({ data }: { data: ServicesSectionData }) {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, amount: 0.15 }}
                 transition={{ duration: 0.45, delay: idx * 0.1 }}
-                className="group bg-white rounded-xl overflow-hidden border border-slate-200/90 shadow-[0_2px_12px_rgba(0,0,0,0.04)] hover:shadow-[0_12px_28px_rgba(10,37,64,0.08)] hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between"
+                className="h-full"
               >
-                {/* Top Card Body */}
-                <div className="p-5 sm:p-6 pb-4">
-                  {/* Icon Container: Soft warm sand square */}
-                  <div className="w-13 h-13 rounded-xl bg-[#FAF5EE] text-[#BA8C5B] flex items-center justify-center transition-colors duration-300 group-hover:bg-[#BA8C5B] group-hover:text-white">
-                    <IconComponent className="w-6 h-6 stroke-[1.8]" />
+                <Link
+                  href={srv.link || '#contact'}
+                  onClick={(e) => handleCardClick(e, srv.link || '#contact')}
+                  className="group bg-white rounded-xl overflow-hidden border border-slate-200/90 shadow-[0_2px_12px_rgba(0,0,0,0.04)] hover:shadow-[0_12px_28px_rgba(10,37,64,0.08)] hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between h-full cursor-pointer"
+                >
+                  {/* Top Card Body */}
+                  <div className="p-5 sm:p-6 pb-4">
+                    {/* Icon Container: Soft warm sand square */}
+                    <div className="w-13 h-13 rounded-xl bg-[#FAF5EE] text-[#BA8C5B] flex items-center justify-center transition-colors duration-300 group-hover:bg-[#BA8C5B] group-hover:text-white">
+                      <IconComponent className="w-6 h-6 stroke-[1.8]" />
+                    </div>
+
+                    {/* Title */}
+                    <h3 className="text-[17px] sm:text-[18px] font-bold text-[#0A2540] mt-4 leading-snug group-hover:text-[#BA8C5B] transition-colors duration-200">
+                      {srv.title}
+                    </h3>
+
+                    {/* Description */}
+                    <p className="mt-2 text-[13px] sm:text-[13.5px] leading-relaxed text-[#556987] font-normal">
+                      {srv.description}
+                    </p>
                   </div>
 
-                  {/* Title */}
-                  <h3 className="text-[17px] sm:text-[18px] font-bold text-[#0A2540] mt-4 leading-snug group-hover:text-[#BA8C5B] transition-colors duration-200">
-                    {srv.title}
-                  </h3>
-
-                  {/* Description */}
-                  <p className="mt-2 text-[13px] sm:text-[13.5px] leading-relaxed text-[#556987] font-normal">
-                    {srv.description}
-                  </p>
-                </div>
-
-                {/* Bottom Photo: Flush with card bottom and sides matching screenshot */}
-                <div className="relative aspect-[16/10.5] w-full overflow-hidden bg-slate-100 mt-2">
-                  <Image
-                    src={srv.image || '/images/services/buy-property.webp'}
-                    alt={srv.image_alt || srv.title}
-                    fill
-                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
-                    className="object-cover object-center group-hover:scale-105 transition-transform duration-600 ease-out"
-                  />
-                </div>
+                  {/* Bottom Photo: Flush with card bottom and sides matching screenshot */}
+                  <div className="relative aspect-[16/10.5] w-full overflow-hidden bg-slate-100 mt-2">
+                    <Image
+                      src={srv.image || '/images/services/buy-property.webp'}
+                      alt={srv.image_alt || srv.title}
+                      fill
+                      sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
+                      className="object-cover object-center group-hover:scale-105 transition-transform duration-600 ease-out"
+                    />
+                  </div>
+                </Link>
               </motion.div>
             );
           })}

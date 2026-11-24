@@ -96,16 +96,16 @@ export default function Header({ data }: { data: HeaderData }) {
   };
 
   return (
-    <div className="w-full relative z-50">
-      {/* ========================================================= */}
-      {/* 1. TOP BAR (Steel / Slate Blue Background #374B5C)       */}
-      {/* ========================================================= */}
-      <motion.div
-        initial={{ opacity: 0, y: -8 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.35 }}
-        className="bg-[#374B5C] text-white text-[12px] sm:text-[12.5px] border-b border-white/10"
-      >
+    <>
+      <header className="sticky top-0 z-50 w-full transition-all duration-300">
+        {/* ========================================================= */}
+        {/* 1. TOP BAR (Steel / Slate Blue Background #374B5C)       */}
+        {/* ========================================================= */}
+        <div
+          className={`bg-[#374B5C] text-white text-[12px] sm:text-[12.5px] border-b border-white/10 transition-all duration-300 overflow-hidden ${
+            scrolled ? 'max-h-0 opacity-0 pointer-events-none' : 'max-h-14 opacity-100'
+          }`}
+        >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-2 sm:py-2.5 flex items-center justify-between">
           
           {/* Left Info: Address (Desktop only) | Phone | Email */}
@@ -175,16 +175,13 @@ export default function Header({ data }: { data: HeaderData }) {
           )}
 
         </div>
-      </motion.div>
+      </div>
 
       {/* ========================================================= */}
       {/* 2. MAIN NAVBAR (White Background, Sticky with Backdrop)  */}
       {/* ========================================================= */}
-      <motion.header
-        initial={{ opacity: 0, y: -10 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.45 }}
-        className={`sticky top-0 z-40 w-full transition-all duration-300 ${
+      <div
+        className={`w-full transition-all duration-300 ${
           scrolled
             ? 'bg-white/95 shadow-[0_4px_24px_rgba(10,37,64,0.08)] backdrop-blur-md border-b border-slate-100'
             : 'bg-white border-b border-slate-100/90'
@@ -278,7 +275,8 @@ export default function Header({ data }: { data: HeaderData }) {
           </div>
 
         </div>
-      </motion.header>
+      </div>
+    </header>
 
       {/* ========================================================= */}
       {/* 3. MOBILE SLIDE-OUT DRAWER (Smooth Spring Motion)        */}
@@ -401,6 +399,6 @@ export default function Header({ data }: { data: HeaderData }) {
           </>
         )}
       </AnimatePresence>
-    </div>
+    </>
   );
 }

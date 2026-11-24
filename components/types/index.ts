@@ -98,6 +98,7 @@ export interface ServiceItem {
   icon: string;
   image: string;
   image_alt: string;
+  link?: string;
 }
 
 export interface ServicesSectionData {
@@ -197,6 +198,7 @@ export interface FooterData {
   logo_text: string;
   logo_subtext: string;
   tagline: string;
+  description?: string;
   quick_links_title: string;
   quick_links: LinkType[];
   contact_title: string;
